@@ -86,7 +86,7 @@ class HomeScreen extends React.Component{
                   },
             })
             .then((response)=>{
-                console.log(response);
+                // console.log(response);
                 return response.json();})
             .then((json)=>{
                 categories = json.data.categories||[];
@@ -97,7 +97,7 @@ class HomeScreen extends React.Component{
                 });
                 sites = json.data.sites||[];
                 products = json.data.products||[];
-                console.log(categories, sites, products);
+                // console.log(categories, sites, products);
             })
             .then(()=>{
                 resolve({categories, sites, products});
@@ -119,7 +119,7 @@ class HomeScreen extends React.Component{
             });
         })
         .catch((err)=>{
-            console.log("error", err);
+            // console.log("error", err);
             this.setState({
                 isNetworkBroken: 1,
             })

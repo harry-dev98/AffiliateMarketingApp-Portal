@@ -1,4 +1,4 @@
-package com.smart;
+package com.smartzedd.marketing;
 
 import com.facebook.react.ReactActivity;
 
